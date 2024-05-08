@@ -1,0 +1,119 @@
+header {
+    border-bottom: 1px solid #e7e6e6;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 64px;
+    border-bottom: 1px solid #e7e6e6;
+}
+
+.header-top a, .header-top button {
+    font-size: var(--fs-400);
+    display: grid;
+    place-items: center;
+}
+
+.header-top a:hover, .header-top-left div:hover {
+    color: var(--red-clr);
+}
+
+.header-top-left, .header-top-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-top-left h3 {
+    margin-left: 8px;
+}
+
+.header-top-left div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+.header-top-left h3 {
+    font-size: var(--fs-300);
+    font-weight: 400;
+}
+
+.header-top-right a, .header-top-right button {
+    margin-left: 24px;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 64px;
+}
+
+.header-bottom-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom-left .burger {
+    height: 40px;
+    width: 40px;
+    padding-left: 5px;
+    margin-right: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.header-bottom-left .burger div {
+    height: 2px;
+    background-color: var(--gray-clr);
+    margin-bottom: 6px;
+}
+
+.header-bottom-left .burger div:nth-child(2n + 1){
+    width: 60%;
+}
+.header-bottom-left .burger div:nth-child(2n + 2){
+    width: 50%;
+}
+
+.header-bottom-left .logo {
+    height: 40px;
+    width: 170px;
+    margin-right: 48px;
+}
+
+.header-bottom-left .links a {
+    margin-right: 48px;
+    font-weight: 500;
+}
+
+.header-bottom-left .links a:hover {
+    color: var(--red-clr);
+}
+
+.header-bottom-input {
+    background-color: var(--light-gray-clr);
+    width: 250px;
+    color: var(--gray-clr);
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.header-bottom-input input {
+    width: 100%;
+    padding: 0 8px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: var(--gray-clr);
+    font-size: var(--fs-200);
+    font-family: inherit;
+    margin-left: 16px;
+}

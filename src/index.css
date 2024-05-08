@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+input {
+	font-family: inherit;
+}
+
+:root {
+	--red-clr: #F75454;
+	--pink-clr: #FFF6F6;
+	--black-clr: #161619;
+	--white-clr: #FFFFFF;
+	--brown-clr: #7C6E65;
+	--gray-clr: #BEB4B4;
+	--category-purple-clr: #F9F1FF;
+	--category-purple-text-clr: #A101FC;
+	--category-yellow-clr: #FAF4EB;
+	--category-yellow-text-clr: #F69400;
+	--category-red-clr: #F4E5E4;
+	--category-red-text-clr: #EF1100;
+	--category-blue-clr: #E5F2F4;
+	--category-blue-text-clr: #02CDEF;
+	--category-pink-clr: #FEF6F6;
+	--category-pink-text-clr: #FF8E8E;
+	--light-gray-clr: #e7e6e6;
+	--fs-100: 12px;
+	--fs-200: 14px;
+	--fs-300: 16px;
+	--fs-400: 18px;
+	--fs-500: 20px;
+	--fs-600: 24px;
+	--fs-700: 28px;
+	--fs-800: 32px;
+	--fs-900: 56px;
+}
+
+.container {
+	padding: 0 140px;
 }

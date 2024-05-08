@@ -1,0 +1,27 @@
+.categories {
+    padding: 80px 0;
+}
+
+.categories-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.categories-top h1 {
+    font-size: var(--fs-700);
+    font-weight: 500;
+}
+
+.categories-top button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--fs-300);
+}
+
+.categories-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

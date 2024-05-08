@@ -1,0 +1,35 @@
+.best-selling {
+	padding: 48px 0;
+}
+
+.best-selling-top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+.best-selling-top h1 {
+	font-size: var(--fs-700);
+	font-weight: 500;
+}
+
+.best-selling-top button {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: var(--fs-300);
+}
+
+.best-selling-items {
+	display: flex;
+	overflow-x: scroll;
+}
+
+.best-selling-items::-webkit-scrollbar {
+	display: none;
+}
+
+.best-selling-items .book {
+	width: calc(100% / 5);
+	flex-shrink: 0;
+}
