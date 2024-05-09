@@ -1,10 +1,41 @@
 .book {
+	background-color: var(--white-clr);
 	border: 1px solid var(--light-gray-clr);
 	padding: 32px;
 	position: relative;
-	min-height: 400px;
+	min-height: 380px;
 }
 
+.book.horizontal {
+	display: flex;
+}
+
+.book.horizontal .book-info, .book.horizontal .book-controls {
+	position: initial;
+	padding: 0 32px;
+}
+
+.book.book.horizontal:hover .book-info {
+	transform: initial;
+}
+
+.book.horizontal .book-img {
+	width: initial;
+	height: 100%;
+	flex: 4;
+}
+
+.book.horizontal .book-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 8;
+}
+
+.book.horizontal .book-info h4 {
+	margin-bottom: 16px;
+}
+ 
 .book:hover {
 	border: 1px solid black;
 }
@@ -12,13 +43,7 @@
 .book:hover .book-info {
 	transform: translateY(-56px);
 }
-
-.book:hover .book-controls {
-	
-}
-
 .book-img {
-	width: 70%;
 	margin: 0 auto;
 	margin-bottom: 8px;
 }
@@ -98,7 +123,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
 
 .book-heart-btn:hover {

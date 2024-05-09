@@ -1,4 +1,4 @@
-import "./Categories.css";
+import "./FeaturedCategories.css";
 import { useState } from "react";
 import CategoryItem from "../../components/categoryItem/CategoryItem";
 import {
@@ -11,12 +11,12 @@ import {
 } from "@mui/icons-material";
 
 function Categories() {
-	const [categoryItems, setCategoryItems] = useState([
+	const [categoryItems] = useState([
 		{ id: 1, title: "Arts and Photo", icon: <PhotoLibrary className="categories-item-icon" fontSize="inherit"/> },
-		{ id: 2, title: "Arts and Photo", icon: <DinnerDining className="categories-item-icon" fontSize="inherit"/> },
-		{ id: 3, title: "Arts and Photo", icon: <FavoriteBorder className="categories-item-icon" fontSize="inherit"/> },
-		{ id: 4, title: "Arts and Photo", icon: <Vaccines className="categories-item-icon" fontSize="inherit"/> },
-		{ id: 5, title: "Arts and Photo", icon: <LibraryBooks className="categories-item-icon" fontSize="inherit"/> },
+		{ id: 2, title: "Food and Drink", icon: <DinnerDining className="categories-item-icon" fontSize="inherit"/> },
+		{ id: 3, title: "Romance", icon: <FavoriteBorder className="categories-item-icon" fontSize="inherit"/> },
+		{ id: 4, title: "Health", icon: <Vaccines className="categories-item-icon" fontSize="inherit"/> },
+		{ id: 5, title: "Biography", icon: <LibraryBooks className="categories-item-icon" fontSize="inherit"/> },
 	]);
 
 	return (

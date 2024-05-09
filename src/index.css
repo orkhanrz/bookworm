@@ -49,11 +49,15 @@ input {
 	--fs-400: 18px;
 	--fs-500: 20px;
 	--fs-600: 24px;
-	--fs-700: 28px;
-	--fs-800: 32px;
+	--fs-700: 32px;
+	--fs-750: 40px;
+	--fs-800: 48px;
 	--fs-900: 56px;
 }
 
 .container {
 	padding: 0 140px;
+	max-width: 1700px;
+	width: 100%;
+	margin: 0 auto;
 }

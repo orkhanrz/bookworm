@@ -1,39 +1,37 @@
-.best-selling {
+.deals-of-week {
+    background-color: var(--pink-clr);
 	padding: 48px 0;
 }
 
-.best-selling-top {
+.deals-of-week-top {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 24px;
 }
 
-.best-selling-top h1 {
+.deals-of-week-top h1 {
 	font-size: var(--fs-700);
 	font-weight: 500;
 }
 
-.best-selling-top a {
+.deals-of-week-top a {
 	display: flex;
 	align-items: center;
 	gap: 4px;
 	font-size: var(--fs-300);
 }
 
-.best-selling-items {
+.deals-of-week-items {
 	display: flex;
 	overflow-x: scroll;
+	margin-bottom: 48px;
 }
 
-.best-selling-items::-webkit-scrollbar {
+.deals-of-week-items::-webkit-scrollbar {
 	display: none;
 }
 
-.best-selling-items .book {
-	width: calc(100% / 5);
+.deals-of-week-items .book {
+	width: 50%;
 	flex-shrink: 0;
-}
-
-.best-selling-items .book-img {
-	width: 70%;
 }

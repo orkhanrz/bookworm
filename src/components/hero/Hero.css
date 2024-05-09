@@ -4,6 +4,7 @@
 	background-size: cover;
 	background-position: center;
 	padding: 164px 140px 44px 140px;
+	margin-bottom: 48px;
 }
 
 .hero-top {
@@ -64,7 +65,7 @@
 	font-weight: 700;
 }
 
-.hero-top.active button {
+.hero-top.active a {
 	opacity: 1;
 	transform: translateX(0);
 	transition: all 500ms ease;
@@ -75,49 +76,19 @@
 	transform: translateX(0);
 }
 
-.hero button {
+.hero a {
 	background-color: var(--black-clr);
 	color: white;
 	font-size: var(--fs-300);
 	font-family: inherit;
-	padding: 14px 48px;
+	padding: 12px 42px;
 	opacity: 0;
 	transform: translateX(-80px);
+	display: inline-block;
 }
 
 .hero img {
 	width: auto;
 	height: 250px;
 	object-fit: cover;
-}
-
-.hero-controls {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 16px;
-}
-
-.hero-controls div {
-	width: 6px;
-	height: 6px;
-	border-radius: 50%;
-	background-color: var(--gray-clr);
-	cursor: pointer;
-}
-
-.hero-controls div.active {
-	background-color: var(--black-clr);
-	position: relative;
-}
-
-.hero-controls div.active::after {
-	content: "";
-	width: 14px;
-	height: 14px;
-	position: absolute;
-	top: -6px;
-	left: -6px;
-	border-radius: 50%;
-	border: 2px solid var(--black-clr);
 }

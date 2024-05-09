@@ -1,0 +1,30 @@
+.hero-controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.hero-controls div {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: var(--gray-clr);
+	cursor: pointer;
+}
+
+.hero-controls div.active {
+	background-color: var(--black-clr);
+	position: relative;
+}
+
+.hero-controls div.active::after {
+	content: "";
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: -6px;
+	left: -6px;
+	border-radius: 50%;
+	border: 2px solid var(--black-clr);
+}

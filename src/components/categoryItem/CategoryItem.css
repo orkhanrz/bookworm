@@ -1,5 +1,6 @@
 .categories-item {
-    padding: 40px;
+    padding: 40px 32px;
+    width: 100%;
     cursor: pointer;
 }
 .categories-item:nth-child(1) {
