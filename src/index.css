@@ -32,6 +32,7 @@ input {
 	--white-clr: #FFFFFF;
 	--brown-clr: #7C6E65;
 	--gray-clr: #BEB4B4;
+	--light-gray-clr: #e7e6e6;
 	--category-purple-clr: #F9F1FF;
 	--category-purple-text-clr: #A101FC;
 	--category-yellow-clr: #FAF4EB;
@@ -42,16 +43,18 @@ input {
 	--category-blue-text-clr: #02CDEF;
 	--category-pink-clr: #FEF6F6;
 	--category-pink-text-clr: #FF8E8E;
-	--light-gray-clr: #e7e6e6;
 	--fs-100: 12px;
 	--fs-200: 14px;
 	--fs-300: 16px;
 	--fs-400: 18px;
 	--fs-500: 20px;
+	--fs-550: 22px;
 	--fs-600: 24px;
+	--fs-650: 28px;
 	--fs-700: 32px;
 	--fs-750: 40px;
 	--fs-800: 48px;
+	--fs-850: 52px;
 	--fs-900: 56px;
 }
 

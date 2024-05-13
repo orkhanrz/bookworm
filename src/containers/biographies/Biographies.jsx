@@ -1,11 +1,9 @@
-import "./DealsOfWeek.css";
+import "./Biographies.css";
 import { useState } from "react";
 import { ArrowForwardIos } from "@mui/icons-material";
-import Book from "../../components/book/Book";
-import Controls from '../../components/controls/Controls';
+import Book from '../../components/book/Book';
 
-function DealsOfWeek() {
-	const [activeIndex, setActiveIndex] = useState(0);
+function Biographies() {
 	const [books] = useState([
 		{
 			id: 1,
@@ -72,33 +70,25 @@ function DealsOfWeek() {
 		},
 	]);
 
-	const handleControlClick = (index) => {
-		const dealsOfWeekItemsDiv = document.querySelector('.deals-of-week-items');
-		const width = dealsOfWeekItemsDiv.clientWidth * ((50 * index) / 100);
-		dealsOfWeekItemsDiv.scroll({left: width, behavior: 'smooth'});
-		setActiveIndex(index);
-	};
-
 	return (
-		<div className="deals-of-week">
+		<div className="biographies">
 			<div className="container">
-				<div className="deals-of-week-content">
-					<div className="deals-of-week-top">
-						<h1>Deals of the Week</h1>
+				<div className="biographies-content">
+					<div className="biographies-top">
+						<h1>Biographies Books</h1>
 						<a href="#">
 							View All <ArrowForwardIos fontSize="small" />
 						</a>
 					</div>
-					<div className="deals-of-week-items">
+					<div className="biographies-items">
 						{books.map((item) => (
-							<Book item={item} key={item.id} horizontal={true} />
+							<Book horizontal={true} item={item} key={item.id} />
 						))}
 					</div>
-					<Controls length={books.length - 1} activeIndex={activeIndex} handleClick={handleControlClick}/>
 				</div>
 			</div>
 		</div>
 	);
 }
 
-export default DealsOfWeek;
+export default Biographies;

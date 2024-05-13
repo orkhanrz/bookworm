@@ -9,7 +9,7 @@
 }
 
 .categories-top h1 {
-    font-size: var(--fs-700);
+    font-size: var(--fs-650);
     font-weight: 500;
 }
 
@@ -22,6 +22,7 @@
 
 .categories-items {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 32px;
 }

@@ -1,0 +1,45 @@
+.biographies {
+	padding: 48px 0;
+}
+
+.biographies-top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+.biographies-top h1 {
+	font-size: var(--fs-650);
+	font-weight: 500;
+}
+
+.biographies-top a {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: var(--fs-300);
+}
+
+.biographies-items {
+	display: flex;
+	align-items: center;
+	overflow-x: scroll;
+}
+
+.biographies-items .book {
+	flex-shrink: 0;
+    width: calc(100% / 3);
+	min-height: initial;
+}
+
+.biographies-items .book .book-img {
+	margin-bottom: initial;
+}
+
+.biographies-items .book .book-details {
+	height: fit-content;
+}
+
+.biographies-items .book .book-controls {
+	display: none;
+}

@@ -112,7 +112,7 @@ header {
     border: none;
     background-color: transparent;
     outline: none;
-    color: var(--gray-clr);
+    color: var(--brown-clr);
     font-size: var(--fs-200);
     font-family: inherit;
     margin-left: 16px;
