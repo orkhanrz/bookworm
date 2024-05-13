@@ -1,6 +1,6 @@
-import './NewReleases.css';
-import { useState } from 'react';
-import Book from '../../components/book/Book';
+import "./NewReleases.css";
+import { useState } from "react";
+import Book from "../../components/book/Book";
 
 function NewReleases() {
 	const [books, setBooks] = useState([
@@ -9,7 +9,7 @@ function NewReleases() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-1.jpg",
 		},
@@ -18,7 +18,7 @@ function NewReleases() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-2.jpg",
 		},
@@ -27,7 +27,7 @@ function NewReleases() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-3.jpg",
 		},
@@ -36,7 +36,7 @@ function NewReleases() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-4.jpg",
 		},
@@ -45,7 +45,7 @@ function NewReleases() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-5.jpg",
 		},
@@ -54,7 +54,7 @@ function NewReleases() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-6.jpg",
 		},
@@ -63,7 +63,7 @@ function NewReleases() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-7.jpg",
 		},
@@ -72,10 +72,10 @@ function NewReleases() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-8.jpg",
-		}
+		},
 	]);
 
 	return (
@@ -93,20 +93,24 @@ function NewReleases() {
 							<a href="#">Travel</a>
 						</div>
 					</div>
-                    <div className="new-releases-items">
-                        <div className="new-releases-left">
-							<div className="new-releases-left-img">
-								<img src="./images/new-releases-left.png" alt="" />
+					<div className="new-releases-items">
+						<div className="new-releases-left">
+							<div className="new-releases-left-content">
+								<div className="new-releases-left-img">
+									<img src="./images/new-releases-left.png" alt="" />
+								</div>
+								<h2>Get Extra</h2>
+								<h1>Sale -25%</h1>
+								<h3>On Order Over $100</h3>
+								<a href="#">View More</a>
 							</div>
-							<h2>Get Extra</h2>
-							<h1>Sale -25%</h1>
-							<h3>On Order Over $100</h3>
-							<a href='#'>View More</a>
 						</div>
-                        <div className="new-releases-right">
-							{books.map(item => <Book item={item} key={item.id}/>)}
+						<div className="new-releases-right">
+							{books.map((item) => (
+								<Book item={item} key={item.id} />
+							))}
 						</div>
-                    </div>
+					</div>
 				</div>
 			</div>
 		</div>

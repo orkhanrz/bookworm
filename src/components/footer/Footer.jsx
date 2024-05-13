@@ -93,12 +93,14 @@ function Footer() {
 							<p>©2020 Book Worm. All rights reserved</p>
 							<div className="footer-payments">
 								<img src="/images/footer-payments.png" alt="payment types" />
-								<select name="country" id="country">
-									<option value="us">EN-US</option>
-								</select>
-								<select name="currency" id="currency">
-									<option value="usd">$USD</option>
-								</select>
+								<div className="footer-payment-inputs">
+									<select name="country" id="country">
+										<option value="us">EN-US</option>
+									</select>
+									<select name="currency" id="currency">
+										<option value="usd">$USD</option>
+									</select>
+								</div>
 							</div>
 						</div>
 					</div>

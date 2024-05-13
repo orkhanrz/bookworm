@@ -72,7 +72,7 @@ header {
 .header-bottom-left .burger div {
     height: 2px;
     background-color: var(--gray-clr);
-    margin-bottom: 6px;
+    margin: 3px 0;
 }
 
 .header-bottom-left .burger div:nth-child(2n + 1){
@@ -88,9 +88,14 @@ header {
     margin-right: 48px;
 }
 
+.header-bottom-left .logo svg {
+    height: 100%;
+}
+
 .header-bottom-left .links a {
-    margin-right: 48px;
     font-weight: 500;
+    font-size: var(--fs-300);
+    margin-right: 48px;
 }
 
 .header-bottom-left .links a:hover {
@@ -116,4 +121,34 @@ header {
     font-size: var(--fs-200);
     font-family: inherit;
     margin-left: 16px;
+}
+
+@media screen and (max-width: 992px) {
+	.header-bottom-left .links {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.header-top {
+        display: none;
+    }
+
+    .header-bottom {
+        padding: 16px 32px;
+        align-items: initial;
+        flex-direction: column;
+    }
+
+    .header-bottom-left {
+        margin-bottom: 8px;
+    }
+
+    .header-bottom-left .burger {
+        margin-right: 16px;
+    }
+
+    .header-bottom-input {
+        width: 100%;
+    }
 }

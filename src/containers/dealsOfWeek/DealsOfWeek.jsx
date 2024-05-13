@@ -74,9 +74,11 @@ function DealsOfWeek() {
 
 	const handleControlClick = (index) => {
 		const dealsOfWeekItemsDiv = document.querySelector('.deals-of-week-items');
-		const width = dealsOfWeekItemsDiv.clientWidth * ((50 * index) / 100);
+		const dealsOfWeekItemWidth = +window.getComputedStyle(document.querySelector('.deals-of-week-items .book')).width.split('px')[0];
+		const width = dealsOfWeekItemWidth * index;
 		dealsOfWeekItemsDiv.scroll({left: width, behavior: 'smooth'});
 		setActiveIndex(index);
+
 	};
 
 	return (

@@ -1,6 +1,7 @@
 .book {
 	background-color: var(--white-clr);
 	border: 1px solid var(--light-gray-clr);
+	border-collapse: collapse;
 	padding: 32px;
 	position: relative;
 	min-height: 380px;
@@ -46,6 +47,7 @@
 .book-img {
 	margin: 0 auto;
 	margin-bottom: 8px;
+	min-width: 90px;
 }
 
 .book-img img {

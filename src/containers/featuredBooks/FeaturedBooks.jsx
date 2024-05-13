@@ -1,15 +1,15 @@
 import "./FeaturedBooks.css";
 import { useState } from "react";
-import Book from '../../components/book/Book';
+import Book from "../../components/book/Book";
 
 function FeaturedBooks() {
-    const [books, setBooks] = useState([
+	const [books, setBooks] = useState([
 		{
 			id: 1,
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-1.jpg",
 		},
@@ -18,7 +18,7 @@ function FeaturedBooks() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-2.jpg",
 		},
@@ -27,7 +27,7 @@ function FeaturedBooks() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-3.jpg",
 		},
@@ -36,7 +36,7 @@ function FeaturedBooks() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-4.jpg",
 		},
@@ -45,7 +45,7 @@ function FeaturedBooks() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-5.jpg",
 		},
@@ -54,7 +54,7 @@ function FeaturedBooks() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-6.jpg",
 		},
@@ -63,7 +63,7 @@ function FeaturedBooks() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-7.jpg",
 		},
@@ -72,7 +72,7 @@ function FeaturedBooks() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-8.jpg",
 		},
@@ -81,7 +81,7 @@ function FeaturedBooks() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-1.jpg",
 		},
@@ -90,7 +90,7 @@ function FeaturedBooks() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-2.jpg",
 		},
@@ -99,7 +99,7 @@ function FeaturedBooks() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-3.jpg",
 		},
@@ -108,7 +108,7 @@ function FeaturedBooks() {
 			type: "Hardcover",
 			title: "Dark in Death: An Eve Dallas Novel (In Death, Book 46)",
 			author: "L.J. Shen",
-			price: 1.30,
+			price: 1.3,
 			oldPrice: 1.75,
 			img: "./images/book-4.jpg",
 		},
@@ -118,17 +118,21 @@ function FeaturedBooks() {
 		<div className="featured-books">
 			<div className="container">
 				<div className="featured-books-content">
-					<h1 className="featured-books-title">Featured Books</h1>
-                    <div className="featured-books-categories">
-                        <a href="#" className="active">Featured</a>
-                        <a href="#">On Sale</a>
-                        <a href="#">Most Viewed</a>
-                    </div>
-                    <div className="featured-books-items">
-                        {books.map(item => {
-                            return <Book item={item} key={item.id}/>
-                        })}
-                    </div>
+					<div className="featured-books-top">
+						<h1 className="featured-books-title">Featured Books</h1>
+						<div className="featured-books-categories">
+							<a href="#" className="active">
+								Featured
+							</a>
+							<a href="#">On Sale</a>
+							<a href="#">Most Viewed</a>
+						</div>
+					</div>
+					<div className="featured-books-items">
+						{books.map((item) => {
+							return <Book item={item} key={item.id} />;
+						})}
+					</div>
 				</div>
 			</div>
 		</div>

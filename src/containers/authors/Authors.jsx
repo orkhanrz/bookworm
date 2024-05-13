@@ -3,9 +3,9 @@ import { ArrowForwardIos, ChevronLeft, ChevronRight } from "@mui/icons-material"
 
 function Authors() {
 	function scrollAuthors(direction) {
-        const authorItems = document.querySelector('.author-items');
-        let width = authorItems.clientWidth * (20 / 100);
-        width = direction === 'left' ? -width : width;
+		const authorItems = document.querySelector('.author-items');
+		const authorItemWidth = +window.getComputedStyle(document.querySelector('.author-item')).width.split('px')[0];
+        const width = direction === 'left' ? -authorItemWidth : authorItemWidth;
 
         authorItems.scrollBy({ left: width, behavior: 'smooth' });
     }

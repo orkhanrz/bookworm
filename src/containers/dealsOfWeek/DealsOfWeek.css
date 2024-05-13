@@ -35,3 +35,9 @@
 	width: 50%;
 	flex-shrink: 0;
 }
+
+@media screen and (max-width: 1200px) {
+    .deals-of-week-items .book {
+		width: 100%;
+	}
+}

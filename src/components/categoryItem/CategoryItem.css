@@ -1,5 +1,5 @@
 .categories-item {
-    min-width: calc((100% / 5) - 26px);
+    flex: 1 1 12em;
     padding: 40px 32px;
     cursor: pointer;
 }
@@ -32,7 +32,9 @@
     font-weight: 500;
     margin-bottom: 4px;
     color: black !important;
+    width: max-content;
 }
 .categories-item button {
     font-size: var(--fs-300);
+    width: max-content;
 }
