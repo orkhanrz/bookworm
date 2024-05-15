@@ -1,9 +1,10 @@
 import "./Book.css";
+import { Link } from "react-router-dom";
 import { FavoriteBorder } from "@mui/icons-material";
 
 function Book({ item, horizontal }) {
 	return (
-		<div className={`book ${horizontal ? "horizontal" : ""}`}>
+		<Link to={'/books/' + item.id} className={`book ${horizontal ? "horizontal" : ""}`}>
 			<div className="book-img">
 				<img src={item.img} alt="" />
 			</div>
@@ -23,7 +24,7 @@ function Book({ item, horizontal }) {
 					</button>
 				</div>
 			</div>
-		</div>
+		</Link>
 	);
 }
 

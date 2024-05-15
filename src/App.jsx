@@ -1,27 +1,23 @@
-import Hero from "./components/hero/Hero";
-import Header from "./components/header/Header";
-import Footer from './components/footer/Footer';
-import Categories from "./containers/featuredCategories/FeaturedCategories";
-import BestSelling from "./containers/bestSelling/BestSelling";
-import FeaturedBooks from "./containers/featuredBooks/FeaturedBooks";
-import DealsOfWeek from "./containers/dealsOfWeek/DealsOfWeek";
-import NewReleases from "./containers/newReleases/NewReleases";
-import Biographies from "./containers/biographies/Biographies";
-import Authors from "./containers/authors/Authors";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Error from "./pages/error/Error";
+import Book from "./pages/book/Book";
+
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <Home />,
+	},
+	{
+		path: "/books/:id",
+		element: <Book />
+	},
+    {
+        path: "*",
+        element: <Error />
+    }
+]);
 
 export default function App() {
-	return (
-		<>
-			<Header />
-            <Hero />
-			<Categories />
-			<BestSelling />
-			<FeaturedBooks />
-			<DealsOfWeek />
-			<NewReleases />
-			<Biographies />
-			<Authors />
-			<Footer />
-		</>
-	);
+	return <RouterProvider router={router} />
 }

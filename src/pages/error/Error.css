@@ -1,0 +1,40 @@
+.error-content {
+    text-align: center;
+    padding: 64px 0;
+}
+
+.error-content h1 {
+    font-size: 192px;
+    font-weight: 500;
+    line-height: 192px;
+    margin-bottom: 16px;
+}
+
+.error-content h3 {
+    font-size: var(--fs-500);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.error-content p {
+    font-size: var(--fs-200);
+    margin-bottom: 48px;
+}
+
+.error-content button {
+    background-color: var(--black-clr);
+    color: var(--white-clr);
+    font-size: var(--fs-300);
+    padding: 16px 96px;
+}
+
+@media screen and (max-width: 768px) {
+	.error-content h1 {
+        font-size: 96px;
+        line-height: 96px;
+    }
+
+    .error-content button {
+        padding: 16px 80px;
+    }
+}

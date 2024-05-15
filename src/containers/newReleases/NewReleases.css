@@ -89,7 +89,7 @@
 }
 
 .new-releases-right .book {
-    width: 25%;
+    flex: 1 0 calc(100% / 4);
 }
 
 @media screen and (max-width: 1200px) {
@@ -107,20 +107,12 @@
     }
 
     .new-releases .book {
-        width: calc(100% / 3);
-    }
-
-    .new-releases .book .book-img {
-        width: 60%;
+        flex: 1 0 calc(100% / 3);
     }
 }
 
 @media screen and (max-width: 992px) {
 	.new-releases .book {
-        width: calc(100% / 2);
-    }
-
-    .new-releases .book .book-img {
-        width: 50%;
+        flex: 1 0 calc(100% / 2);
     }
 }

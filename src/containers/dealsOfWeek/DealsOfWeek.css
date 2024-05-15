@@ -36,6 +36,10 @@
 	flex-shrink: 0;
 }
 
+.deals-of-week-items .book .book-img {
+	max-width: initial;
+}
+
 @media screen and (max-width: 1200px) {
     .deals-of-week-items .book {
 		width: 100%;

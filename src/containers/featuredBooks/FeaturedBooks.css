@@ -39,7 +39,7 @@
 }
 
 .featured-books-items .book .book-img {
-    width: 90%;
+    max-width: 120px;
 }
 
 @media screen and (max-width: 1200px){

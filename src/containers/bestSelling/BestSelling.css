@@ -34,18 +34,10 @@
 	flex-shrink: 0;
 }
 
-.best-selling-items .book-img {
-	width: 70%;
-}
-
 @media screen and (max-width: 1200px) {
 	.best-selling-items .book {
 		width: calc(100% / 3);
 		flex-shrink: 0;
-	}
-
-	.best-selling-items .book-img {
-		width: 55%;
 	}
 }
 
@@ -53,9 +45,5 @@
 @media screen and (max-width: 992px) {
 	.best-selling-items .book {
 		width: calc(100% / 2);
-	}
-
-	.best-selling-items .book-img {
-		width: 40%;
 	}
 }

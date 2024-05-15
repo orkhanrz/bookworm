@@ -90,6 +90,7 @@ header {
 
 .header-bottom-left .logo svg {
     height: 100%;
+    width: 100%;
 }
 
 .header-bottom-left .links a {
@@ -123,7 +124,7 @@ header {
     margin-left: 16px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
 	.header-bottom-left .links {
         display: none;
     }
@@ -150,5 +151,11 @@ header {
 
     .header-bottom-input {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header-bottom {
+        padding: 16px;
     }
 }

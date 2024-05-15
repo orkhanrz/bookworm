@@ -12,6 +12,7 @@
 	--brown-clr: #7C6E65;
 	--gray-clr: #BEB4B4;
 	--light-gray-clr: #e7e6e6;
+	--blue-clr: #041E42;
 	--category-purple-clr: #F9F1FF;
 	--category-purple-text-clr: #A101FC;
 	--category-yellow-clr: #FAF4EB;
@@ -113,5 +114,11 @@ input {
 
 	.container {
 		padding: 0 32px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.container {
+		padding: 0 16px;
 	}
 }

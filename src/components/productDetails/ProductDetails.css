@@ -1,0 +1,20 @@
+.product-details div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.product-details h3 {
+    font-size: var(--fs-200);
+    font-weight: 600;
+}
+
+.product-details p, .product-details a {
+    font-size: var(--fs-300);
+}
+
+.product-details-author, .product-details-format {
+    cursor: pointer;
+    color: var(--red-clr);
+}

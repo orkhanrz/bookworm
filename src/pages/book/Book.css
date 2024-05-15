@@ -1,0 +1,269 @@
+.book-page-content {
+	margin-bottom: 64px;
+	padding: 64px 0;
+	display: flex;
+	gap: 64px;
+}
+
+.book-page-left {
+	flex: 9;
+}
+
+.book-page-aside {
+	flex: 3;
+}
+
+.book-page-top {
+	display: flex;
+	gap: 16px;
+	padding: 0 0 64px 0;
+	border-bottom: 1px solid var(--light-gray-clr);
+}
+
+.book-page-top-left {
+	flex: 5;
+	padding: 32px;
+}
+
+.book-page-top-right {
+	flex: 7;
+	padding: 32px;
+}
+
+.book-page-img {
+	position: relative;
+	min-width: 200px;
+	max-width: 350px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.book-page-img img {
+	display: block;
+	margin-bottom: 32px;
+	width: 100%;
+}
+
+.book-save-price {
+	position: absolute;
+	top: -48px;
+	left: -16px;
+	background-color: var(--blue-clr);
+	color: var(--white-clr);
+	font-weight: 500;
+	width: 100px;
+	aspect-ratio: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+.book-save-price span {
+	font-size: var(--fs-200);
+}
+
+.book-save-price p {
+	font-size: var(--fs-600);
+}
+
+.book-page-title {
+	font-size: var(--fs-650);
+	font-weight: 500;
+	margin-bottom: 12px;
+}
+
+.book-page-author {
+	font-size: var(--fs-200);
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.book-page-author span {
+	color: var(--brown-clr);
+	margin-left: 4px;
+}
+
+.book-page-price {
+	font-size: var(--fs-550);
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.book-page-price span {
+	font-size: var(--fs-100);
+	color: var(--brown-clr);
+	text-decoration: line-through;
+}
+
+.book-page-desc {
+	font-size: var(--fs-200);
+	margin-bottom: 32px;
+}
+
+.book-page-cart-actions {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	margin-bottom: 32px;
+}
+
+.book-page-cart-actions > button {
+	font-size: var(--fs-300);
+	background-color: var(--black-clr);
+	color: var(--white-clr);
+	padding: 12px 0;
+	box-sizing: border-box;
+	flex: 1;
+}
+
+.book-page-input {
+	border: 1px solid var(--light-gray-clr);
+	display: flex;
+	justify-content: space-between;
+}
+
+.book-page-input input {
+	padding: 12px 0;
+	font-size: var(--fs-300);
+	color: var(--brown-clr);
+	border: none;
+	outline: none;
+	width: 50px;
+	text-align: center;
+}
+
+.book-page-input button {
+	padding: 12px;
+	font-size: var(--fs-300);
+	color: var(--brown-clr);
+}
+
+.book-page-user-actions {
+	display: flex;
+	gap: 32px;
+}
+
+.book-page-user-actions button {
+	font-size: var(--fs-300);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.book-page-user-actions button:hover,
+.book-page-user-actions button:focus {
+	color: var(--red-clr);
+}
+
+.book-page-bottom {
+	display: flex;
+}
+
+.book-page-bottom-left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 64px 16px;
+	flex: 3;
+}
+
+.book-page-bottom-left button {
+	color: var(--brown-clr);
+	font-size: var(--fs-300);
+	margin-bottom: 24px;
+}
+
+.book-page-bottom-left button.active {
+	color: var(--black-clr);
+	border-bottom: 1px solid var(--black-clr);
+}
+
+.book-page-bottom-right {
+	flex: 9;
+	padding: 64px 64px;
+	border-left: 1px solid var(--light-gray-clr);
+}
+
+.book-page-bottom-right .product-desc {
+	font-size: var(--fs-300);
+	line-height: var(--fs-600);
+}
+
+.book-recommendations {
+	border: 1px solid var(--light-gray-clr);
+	padding: 32px;
+}
+
+.book-recommendation-item {
+	display: flex;
+	gap: 16px;
+}
+
+.book-recommendation-item:not(:last-child) {
+	margin-bottom: 32px;
+}
+
+.book-recommendation-item img {
+	width: 60px;
+	height: 80px;
+	object-fit: cover;
+}
+
+.book-recommendation-item h3 {
+	font-size: var(--fs-200);
+	font-weight: 300;
+	margin-bottom: 8px;
+}
+
+.book-recommendation-item p {
+	font-size: var(--fs-200);
+	font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+	.book-page-content {
+		gap: 32px;
+	}
+	.book-page-top-left {
+		padding: 16px;
+	}
+	.book-page-top-right {
+		padding: 16px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.book-page-top,
+	.book-page-bottom {
+		flex-direction: column;
+	}
+
+	.book-page-left {
+		flex: 7;
+	}
+	.book-page-aside {
+		flex: 5;
+	}
+
+	.book-page-bottom-left {
+		flex-direction: row;
+		padding: 64px 16px 16px 16px;
+		gap: 32px;
+	}
+
+	.book-page-bottom-right {
+		padding: 16px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.book-page-content {
+		flex-direction: column;
+	}
+
+	.book-page-aside,
+	.book-page-bottom-right {
+		border-left: none;
+	}
+}

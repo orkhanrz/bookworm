@@ -47,7 +47,9 @@
 .book-img {
 	margin: 0 auto;
 	margin-bottom: 8px;
-	min-width: 90px;
+	max-width: 120px;
+	min-width: 80px;
+	width: 100%;
 }
 
 .book-img img {

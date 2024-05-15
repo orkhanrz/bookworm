@@ -92,7 +92,9 @@ function Footer() {
 						<div className="footer-bottom-content">
 							<p>©2020 Book Worm. All rights reserved</p>
 							<div className="footer-payments">
-								<img src="/images/footer-payments.png" alt="payment types" />
+								<div className="footer-payments-img">
+									<img src="/images/footer-payments.png" alt="payment types" />
+								</div>
 								<div className="footer-payment-inputs">
 									<select name="country" id="country">
 										<option value="us">EN-US</option>
